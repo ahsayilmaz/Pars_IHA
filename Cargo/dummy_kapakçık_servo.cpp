@@ -5,8 +5,8 @@
 Servo myservo;
 
 // Hedef konum ve yükseklik
-const float TARGET_LAT = 47.397742;
-const float TARGET_LON = 8.545593;
+const float TARGET_LAT = 47.397742;//enlem
+const float TARGET_LON = 8.545593;//boylam
 const float R = 6371000; // Dünya yarıçapı (metre cinsinden)
 const float earthG = 9.81;//Dünya'nın yer çekimi ivmesi (m/s^2)
 float dummyLat;
