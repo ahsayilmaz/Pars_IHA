@@ -38,16 +38,16 @@ void setup() {
 
 void loop() {
   if(!moduleReleased){
-  float distance = calculateGreatCircleDistance(TARGET_LAT, TARGET_LON, dummyLat, dummyLon);
-  float averageSpeed = (dummyAirspeed + dummyGroundspeed) / 2;
-
-  dummyLat += (dummyGroundspeed / R) * (180.0 / PI); // Hızlara göre konumu güncelle
-
-  handlePosition(dummyLat, dummyLon, dummyAlt, distance, averageSpeed);
-  handleVFRHUD(dummyAirspeed, dummyGroundspeed, dummyHeading);
-
-  // Simülasyonun devam edebilmesi için kısa bir bekleme süresi
-  delay(1000);
+    float distance = calculateGreatCircleDistance(TARGET_LAT, TARGET_LON, dummyLat, dummyLon);
+    float averageSpeed = (dummyAirspeed + dummyGroundspeed) / 2;
+  
+    dummyLat += (dummyGroundspeed / R) * (180.0 / PI); // Hızlara göre konumu güncelle
+  
+    handlePosition(dummyLat, dummyLon, dummyAlt, distance, averageSpeed);
+    handleVFRHUD(dummyAirspeed, dummyGroundspeed, dummyHeading);
+  
+    // Simülasyonun devam edebilmesi için kısa bir bekleme süresi
+    delay(1000);
   }
 }
 
