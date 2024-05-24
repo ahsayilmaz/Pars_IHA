@@ -37,8 +37,6 @@ void setup() {
 }
 
 void loop() {
-  // Rastgele dummy veri oluşturma
-
   if(!moduleReleased){
   float distance = calculateGreatCircleDistance(TARGET_LAT, TARGET_LON, dummyLat, dummyLon);
   float averageSpeed = (dummyAirspeed + dummyGroundspeed) / 2;
